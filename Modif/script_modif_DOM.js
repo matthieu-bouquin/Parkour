@@ -30,7 +30,7 @@ function populateImages(){
 }
 populateImages();
 
-
+/**
 function deleteLastCards(){
     let cards = document.getElementsByClassName("col-md-4");
     for(let i = 0; i <= 2; i++){
