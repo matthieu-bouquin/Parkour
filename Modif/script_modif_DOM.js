@@ -23,14 +23,14 @@ changeLogoName();
 
 function populateImages(){
     let imagesArray = ["https://img.icons8.com/color/480/000000/html-5.png", "https://img.icons8.com/color/480/000000/css3.png", "https://img.icons8.com/color/480/000000/javascript.png", "https://img.icons8.com/color/480/000000/ruby-programming-language.png", "https://img.icons8.com/color/480/000000/bootstrap.png", "https://img.icons8.com/color/480/000000/github.png", "https://i.imgur.com/bJE9Pka.png", "https://avatars2.githubusercontent.com/u/25484553?s=200&v=4", "https://img.icons8.com/color/480/000000/heroku.png"];
-    let img = document.getElementsByTagName("card-img-top");
-        for(let i = 0; i < img.length; i++){
-        img[i].src = String.imagesArray[i];
+    let img = document.getElementsByClassName("card-img-top");
+    for(let i = 0; i < img.length; i++){
+        img[i].src = imagesArray[i];
     }
 }
 populateImages();
 
-/**
+
 function deleteLastCards(){
     let cards = document.getElementsByClassName("col-md-4");
     for(let i = 0; i <= 2; i++){
